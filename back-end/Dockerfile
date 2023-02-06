@@ -1,4 +1,4 @@
-FROM node:15
+FROM node:16
 
 WORKDIR /usr/src
 
@@ -8,7 +8,6 @@ EXPOSE 4000
 
 RUN npm i
 RUN npx prisma generate
-RUN npx prisma migrate dev
 
 RUN apt-get update && apt-get install -y wget
 
