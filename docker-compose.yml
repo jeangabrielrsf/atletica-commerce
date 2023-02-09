@@ -24,7 +24,7 @@ services:
     build: ./back-end
     container_name: app_node
     ports:
-      - 4000:4000
+      - 80:4000
     env_file:
       - ./back-end/.env
     volumes:
