@@ -11,6 +11,7 @@ services:
   banco:
     image: postgres
     environment:
+      - POSTGRES_DATABASE=cachorrada
       - POSTGRES_HOST_AUTH_METHOD=trust
     container_name: banco
     ports:
